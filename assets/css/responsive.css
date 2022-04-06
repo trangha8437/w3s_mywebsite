@@ -1,0 +1,75 @@
+/* PC */
+@media (min-width: 64em) {
+
+}
+
+/* TABLET & MOBILE */
+@media (max-width: 63.9375em) {
+    .content {
+        padding: 74px 16px;
+    }
+    .place__info {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+/* TABLET */
+@media (min-width: 46.25em & max-width: 63.9375em) {
+
+}
+
+/* MOBILE */
+@media (max-width: 46.1875em) {
+    .heading__text {
+        display: none;
+    }
+    .heading__text-mobile {
+        display: block;
+    }
+    .about__text-2 {
+        display: none;
+    }
+    .work__section {
+        height: 100%;
+        flex-direction: column;
+        padding: 16px 0;
+    }
+    .work__section-item {
+        margin: 16px 0;
+    }
+    .work__heading {
+        background: url("https://www.w3schools.com/w3images/parallax2.jpg") center / cover no-repeat;
+    }
+    .work__img-item {
+        width: 100%;
+        padding: 0 8px;
+    }
+    .work__img-item:nth-child(4) {
+        padding-bottom:16px;
+    }
+    .place__info {
+        flex-direction: column;
+    }
+    .place__info-input-item {
+        flex-direction: column;
+    }
+    .place__info-input-detail:nth-child(2) {
+        margin-left: 0;
+    }
+    .navbar__menu {
+        display: block;
+    }
+    .navbar__search {
+        display: none;
+    }
+    .navbar li {
+        display: none;
+    }
+    .navbar li:first-child {
+        display: inline-block;
+    }
+    .navbar-input:checked ~ .navbar-mobile {
+        display: block;
+    }
+}

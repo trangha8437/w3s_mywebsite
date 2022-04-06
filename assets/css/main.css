@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+    color: #777;
+    scroll-behavior: smooth;
+}
+
+.heading {
+    position: relative;
+    height: 400px;
+}
+
+.header {
+    position: relative;
+    height: 100%;
+    background: url("https://www.w3schools.com/w3images/parallax1.jpg") center / cover no-repeat;    
+    opacity: 0.8;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar__list {
+    display: flex;
+    list-style: none;    
+}
+
+.navbar__item {
+    font-size: 1.5rem;
+    padding: 13px 16px;
+}
+
+.navbar__item:hover {
+    background-color: #ccc;
+}
+
+.navbar__item:hover .navbar__item-link {
+    color: #000;
+}
+
+.navbar__item-link {
+    text-decoration: none;
+    color: #777;
+}
+
+.navbar__search,
+.navbar__menu {
+    padding: 13px 16px;
+}
+
+.navbar__menu {
+    display: none;
+}
+
+.navbar__search:hover {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.navbar__menu:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.navbar__search-icon,
+.navbar__menu-icon {
+    font-size: 1.5rem;
+}
+
+/* Navbar mobile */
+.navbar-mobile {
+    position: fixed;
+    top: 44px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    display: none;
+    z-index: 1;
+}
+
+.navbar-mobile__list {
+    list-style: none;
+}
+
+.navbar-mobile__item-link {
+    display: block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #000;
+    padding: 13px 16px;
+}
+
+.heading__text,
+.heading__text-mobile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #404040;
+    color: #fff;
+    font-size: 24px;
+    padding: 12px 24px;
+    letter-spacing: 10px;
+    min-width: 222px;
+}
+
+.heading__text-mobile {
+    display: none;
+}
+
+.content {
+    padding: 74px 76px;
+}
+
+.content__heading {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+.content__description {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-style: italic;
+    margin: 30px 0 26px;
+    line-height: 1.6;
+}
+
+.about__text-1 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.about__introduce {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__info {
+    flex: 1;
+    padding: 12px 24px;
+}
+
+.about__info-name {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 42px 0 46px;
+}
+
+.about__info-img {
+    width: 100%;
+}
+
+.about__text-2 {
+    flex: 1;
+    padding: 12px 24px;
+    margin: 40px 0 46px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.experience-label {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 34px 0;
+}
+
+.experience-item {
+    font-size: 1.5rem;
+}
+
+.experience-name {    
+    letter-spacing: 8px;
+    margin: 15px 0;
+}
+
+.experience-percent {
+    height: 36px;
+    background-color: #f1f1f1;
+    text-align: center;
+    line-height: 36px;
+}
+
+.experience-percent-num {
+    display: block;
+    height: 100%;
+    background-color: #616161;
+    color: #fff;
+}
+
+.work__section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 134px;
+    background-color: #616161;
+}
+
+.work__section-item {
+    color: #fff;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.work__section-item-num {
+    font-size: 2.4rem;
+}
+
+.work__section-item-label {
+    font-size: 1.5rem;
+}
+
+.work__heading {
+    height: 400px;
+    background: url("https://www.w3schools.com/w3images/parallax2.jpg") center;
+    opacity: 0.8;
+}
+
+.heading__text-normal {
+    text-align: center;
+    line-height: 400px;
+    font-size: 3.6rem;
+    color: #fff;
+    letter-spacing: 8px;    
+}
+
+.work__img {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work__img-item {
+    width: 25%;
+    padding: 8px 8px;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.btn:hover {
+    background-color: #ccc;
+    cursor: pointer;
+    color: #000;
+}
+
+.work__btn {
+    margin: 64px auto 16px;
+    padding: 17px 22px;
+    background-color: #f1f1f1;
+}
+
+.place__heading {
+    height: 400px;
+    background: url("https://www.w3schools.com/w3images/parallax3.jpg") center / cover no-repeat;
+    opacity: 0.8;
+}
+
+.place__info {
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 124px 0;
+}
+
+.place__info-map {
+    flex: 1;
+}
+
+.place__info-map-img {
+    width: 100%;
+    padding: 0 16px;
+}
+
+.place__info-list {
+    flex: 2;
+    padding: 16px;
+}
+
+.place__info-item {
+    font-size: 1.7rem;
+    line-height: 1.7;
+}
+
+.place__info-detail {
+    display: flex;
+    align-items: center;
+}
+
+.place__info-detail-icon {
+    font-size: 2.2rem;
+    margin-right: 22px;
+}
+
+.place__info-label {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin: 16px 0;
+}
+
+.place__info-input-item {
+    display: flex;
+}
+
+.place__info-input-detail {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    padding: 8px;
+    margin-bottom: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.place__info-input-detail:nth-child(2) {
+    margin-left: 8px;
+}
+
+.send__btn {
+    background-color: #000;
+    color: #fff;
+    padding: 13px;
+    margin: 8px 0 54px;
+    float: right;
+}
+
+.footer {
+    position: relative;
+    height: 288px;
+    background-color: #666;
+}
+
+.footer:hover {
+    background-color: #000;
+}
+
+.footer__web {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.footer__btn {
+    font-size: 1.5rem;
+    padding: 13px;
+    margin: auto;
+}
+
+.footer__btn-icon {
+    margin-right: 12px;
+}
+
+.footer__socials {
+    margin: 32px 0;
+}
+
+.footer__socials-link {
+    text-decoration: none;
+    font-size: 2.4rem;
+    color: #fff;
+    padding: 0 8px;
+}
+
+.footer__socials-link:hover {
+    opacity: 0.6;
+}
+
+.footer__power {
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.footer__power-link {
+    color: #fff;
+}
+
+.footer__power-link:hover {
+    color: green;
+}
+
